@@ -6,7 +6,7 @@ url='http://wiki.ros.org/ackermann_steering_controller'
 pkgname='ros-melodic-ackermann-steering-controller'
 pkgver='0.17.0'
 arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
-pkgrel=1
+pkgrel=2
 license=('BSD')
 
 ros_makedepends=(
@@ -20,6 +20,14 @@ ros_makedepends=(
   ros-melodic-nav-msgs
   ros-melodic-realtime-tools
   ros-melodic-pluginlib
+# test depends
+  ros-melodic-controller-manager
+  ros-melodic-geometry-msgs
+  ros-melodic-rosunit
+  ros-melodic-rostest
+  ros-melodic-std-msgs
+  ros-melodic-std-srvs
+  ros-melodic-xacro
 )
 
 makedepends=(
